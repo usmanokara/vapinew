@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:vapi/Vapi.dart';
+import 'package:vapi/Vapinew.dart';
 
 const VAPI_PUBLIC_KEY = 'VAPI_PUBLIC_KEY';
 const VAPI_ASSISTANT_ID = 'VAPI_ASSISTANT_ID';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   _MyAppState createState() => _MyAppState();
 }
@@ -48,7 +50,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Test App'),
+          title: const Text('Test App'),
         ),
         body: Center(
           child: ElevatedButton(

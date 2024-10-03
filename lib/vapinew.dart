@@ -1,7 +1,8 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:http/http.dart' as http;
+
 import 'package:daily_flutter/daily_flutter.dart';
+import 'package:http/http.dart' as http;
 import 'package:permission_handler/permission_handler.dart';
 
 class VapiEvent {
@@ -84,7 +85,7 @@ class Vapi {
 
     _client = client;
 
-    var webCallUrl = null;
+    var webCallUrl;
 
     if (response.statusCode == 201) {
       print("🆗 ${DateTime.now()}: Vapi - Vapi Call Ready");
